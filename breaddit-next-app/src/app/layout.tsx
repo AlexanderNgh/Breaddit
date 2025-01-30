@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { Croissant_One } from 'next/font/google';
-const croissant = Croissant_One({
+import { Bagel_Fat_One } from 'next/font/google';
+const default_font = Bagel_Fat_One({
   subsets:['latin'],
-  weight: '400',
+  weight: ['400'],
 });
 
 const geistSans = Geist({
@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${default_font.className}`}
       >
         {children}
       </body>
