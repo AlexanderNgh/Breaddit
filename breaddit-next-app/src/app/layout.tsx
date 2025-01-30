@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Croissant_One } from 'next/font/google';
+const croissant = Croissant_One({
+  subsets:['latin'],
+  weight: '400',
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
