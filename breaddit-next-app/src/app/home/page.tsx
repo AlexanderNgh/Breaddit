@@ -1,9 +1,9 @@
 import Image from "next/image";
 
-export default function landing() {
+export default function home() {
   return (
     <div className="">
-      hello welcome to breaddit landing
+      hello welcome to breaddit home page!
     </div>
   );
 }
